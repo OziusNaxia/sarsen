@@ -198,9 +198,6 @@ def terrain_correction(
         if enable_dask_distributed:
             maybe_delayed.compute()
 
-    if output_urlpath is None:
-        return simulated_beta_nought
-
     logger.info("calibrate image")
 
     beta_nought = product.beta_nought()
